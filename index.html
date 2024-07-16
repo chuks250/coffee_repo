@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./build/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Coffee_project</title>
+  </head>
+  <body class="overflow-x-hidden poppins">
+    <header class="bg-[#3B141C] text-white">
+      <nav
+        class="flex items-center justify-between px-8 py-8 lg:py-4 fixed top-0 main_bg w-full z-50"
+      >
+        <div
+          class="flex items-center justify-center gap-2 text-3xl font-bold cursor-pointer"
+        >
+          <img
+            src="./images/coffee_logo.png"
+            alt="Coffee"
+            class="w-[40px] h-[40px]"
+          />
+          <span>Coffee</span>
+        </div>
+        <ul
+          class="hidden lg:flex items-center justify-center gap-5"
+          id="navContainer"
+        >
+          <li
+            class="py-2 px-6 rounded-full hover:bg-[#F3961C] hover:main_bg_text font-bold transition-all duration-150 ease-linear"
+          >
+            <a href="#home">Home</a>
+          </li>
+          <li
+            class="py-2 px-6 rounded-full hover:bg-[#F3961C] hover:main_bg_text font-bold transition-all duration-150 ease-linear"
+          >
+            <a href="#about">About</a>
+          </li>
+          <li
+            class="py-2 px-6 rounded-full hover:bg-[#F3961C] hover:main_bg_text font-bold transition-all duration-150 ease-linear"
+          >
+            <a href="#services">Services</a>
+          </li>
+          <li
+            class="py-2 px-6 rounded-full hover:bg-[#F3961C] hover:main_bg_text font-bold transition-all duration-150 ease-linear"
+          >
+            <a href="#why_us">Why Us</a>
+          </li>
+          <li
+            class="py-2 px-6 rounded-full hover:bg-[#F3961C] hover:main_bg_text font-bold transition-all duration-150 ease-linear"
+          >
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li
+            class="py-2 px-6 rounded-full hover:bg-[#F3961C] hover:main_bg_text font-bold transition-all duration-150 ease-linear"
+          >
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="lg:hidden" id="toggleMenu">
+          <i class="bx bx-menu text-3xl cursor-pointer animate-bounce"></i>
+        </div>
+        <div class="hidden" id="close">
+          <i class="bx bx-x text-4xl cursor-pointer"></i>
+        </div>
+      </nav>
+
+      <div
+        id="home"
+        aria-label="hero-section"
+        class="px-8 flex flex-col-reverse lg:grid lg:grid-cols-2 items-center h-max mt-[3rem] lg:gap-48 pb-20 pt-8"
+      >
+        <div>
+          <h1
+            class="text-3xl lg:text-[48px] text-center lg:text-start main_orange font-bold"
+          >
+            Fuel Your Passion
+          </h1>
+          <h2 class="text-[36px] capitalize text-center lg:text-start pt-4">
+            Discover the magic in every cup
+          </h2>
+          <p class="text-[18px] mt-4 text-center lg:text-start">
+            Welcome to our coffee paradise, where every bean tells a story and
+            every cup sparks.
+          </p>
+          <div
+            class="flex items-center justify-center lg:justify-start mt-6 gap-6"
+          >
+            <button
+              class="border-transparent rounded-3xl bg-[#F3961C] px-8 py-2 text-[#3b141c] font-bold hover:bg-transparent hover:text-slate-100 hover:rounded-3xl hover:border-slate-200 border-2 transition ease-in duration-200"
+            >
+              Order Online
+            </button>
+            <button
+              class="border-slate-200 rounded-3xl border-solid border-2 px-8 py-2 font-bold hover:bg-[#F3961C] hover:text-[#3b141c] hover:border-transparent transition ease-in duration-200"
+            >
+              Book A Table
+            </button>
+          </div>
+        </div>
+        <div class="p-14">
+          <img
+            src="./images/cofffee_image.png"
+            alt="coffee"
+            class="h-auto lg:w-96"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- about us section -->
+    <section
+      id="about"
+      class="mt-20 pb-20 lg:grid lg:grid-cols-2 lg:gap-20 place-items-center"
+    >
+      <div class="flex flex-col items-center p-8">
+        <div class="grid place-items-center">
+          <h1 class="text-[32px] font-semibold font-serif">About Us</h1>
+          <div class="py-[2px] w-[80px] bg-[#F3961C] rounded-full"></div>
+        </div>
+
+        <p class="text-[18px] pt-20 font-medium">
+          We at Coffee House, located in Berndorf, Germany, are one of the
+          favorite hangouts for coffee and conversations. Our goal is to offer
+          the best experience to our guests, ensuring an authentic coffee
+          drinking experience in a warm, friendly, and relaxed environment. We
+          aim to bring a sense of relaxation to the city with our cozy space,
+          complete with comfortable couches to lounge in while you enjoy your
+          coffee.
+        </p>
+      </div>
+      <div class="grid place-content-center">
+        <img
+          class="w-72 h-auto pt-4 lg:w-[500px] lg:h-[522px]"
+          src="./images/about_coffee.png"
+          alt="about_coffee"
+        />
+      </div>
+    </section>
+    <!-- about us end -->
+    <!-- our services start -->
+    <section
+      id="services"
+      class="pt-20 pb-20 grid place-content-center bg-[#252525] text-white"
+    >
+      <div class="grid place-items-center justify-center">
+        <h1 class="text-[32px] font-semibold font-serif">Our Services</h1>
+        <div class="py-[2px] w-[80px] bg-[#F3961C] rounded-full"></div>
+      </div>
+
+      <div
+        class="md:grid md:grid-cols-2 md:gap-x-28 items-center lg:grid-cols-3 lg:gap-x-44"
+      >
+        <!-- service_items  -->
+        <div class="grid place-items-center w-72 h-auto pt-20">
+          <img
+            class="w-72"
+            src="./images/hot_beverages.png"
+            alt="hot_beverages"
+          />
+          <h2 class="text-[24px] font-semibold pt-4">Hot Beverages</h2>
+          <p class="text-[17px] text-center pt-4">
+            Wide range of Steaming hot coffees to make you fresh and light.
+          </p>
+        </div>
+        <!-- service_items end -->
+        <!-- service_items  -->
+        <div class="grid place-items-center w-72 h-auto pt-20">
+          <img
+            class="w-72"
+            src="./images/cold_beverages.png"
+            alt="hot_beverages"
+          />
+          <h2 class="text-[24px] font-semibold pt-4">Cold Beverages</h2>
+          <p class="text-[17px] text-center pt-4">
+            Creamy and frothy cold coffee to make you feel cool from inside.
+          </p>
+        </div>
+        <!-- service_items end -->
+        <!-- service_items  -->
+        <div class="grid place-items-center w-72 h-auto pt-20">
+          <img
+            class="w-72"
+            src="./images/refreshment.png"
+            alt="hot_beverages"
+          />
+          <h2 class="text-[24px] font-semibold pt-4">Refreshment</h2>
+          <p class="text-[17px] text-center pt-4">
+            Fruit and icy refreshing drink to make you feel good.
+          </p>
+        </div>
+        <!-- service_items end -->
+        <!-- service_items  -->
+        <div class="grid place-items-center w-72 h-auto pt-20">
+          <img
+            class="w-72"
+            src="./images/special_combos.png"
+            alt="hot_beverages"
+          />
+          <h2 class="text-[24px] font-semibold pt-4">Special Combos</h2>
+          <p class="text-[17px] text-center pt-4">
+            Now it's really easy to chose your favourite eating and drinking
+            combinations.
+          </p>
+        </div>
+        <!-- service_items end -->
+        <!-- service_items  -->
+        <div class="grid place-items-center w-72 h-auto pt-20">
+          <img
+            class="w-72"
+            src="./images/burger_frenchFries.png"
+            alt="hot_beverages"
+          />
+          <h2 class="text-[24px] font-semibold pt-4">Burger & French Fries</h2>
+          <p class="text-[17px] text-center pt-4">
+            Yummy! Quick bites to satisfy your small size hunger.
+          </p>
+        </div>
+        <!-- service_items end -->
+        <!-- service_items  -->
+        <div class="grid place-items-center w-72 h-auto pt-20">
+          <img class="w-72" src="./images/dessert.png" alt="hot_beverages" />
+          <h2 class="text-[24px] font-semibold pt-4">Desserts</h2>
+          <p class="text-[17px] text-center pt-4">
+            This for sure would satiate your palate and take you on a culinary
+            treat.
+          </p>
+        </div>
+        <!-- service_items end -->
+      </div>
+    </section>
+    <!-- our services end -->
+    <!-- why_us start -->
+    <section
+      id="why_us"
+      class="bg-[#F2F2F2] pt-10 pb-20 grid place-content-center"
+    >
+      <div class="grid place-items-center justify-center pt-20">
+        <h1 class="text-[32px] font-semibold font-serif">Why US?</h1>
+        <div class="py-[2px] w-[80px] bg-[#F3961C] rounded-full"></div>
+      </div>
+      <div
+        class="w-full pt-10 md:grid md:grid-cols-2 md:gap-x-20 place-items-center justify-items-center lg:grid-cols-3 lg:gap-20"
+      >
+        <!-- info start -->
+        <div class="grid place-items-center w-72 h-auto mt-20">
+          <img class="w-24" src="./images/delicious.png" alt="delicious" />
+          <h2 class="text-[22px] font-semibold pt-4">Delicious Food</h2>
+          <p class="text-[17px] text-center pt-4">
+            With a lavish spread of finger licking food, we serve to satisfy
+            your palate and take you on a culinary treat.
+          </p>
+        </div>
+        <!-- info end -->
+        <!-- info start -->
+        <div class="grid place-items-center w-72 h-auto mt-20">
+          <img class="w-24" src="./images/pleasant.png" alt="pleasant" />
+          <h2 class="text-[22px] font-semibold pt-4">Pleasant Ambience</h2>
+          <p class="text-[17px] text-center pt-4">
+            We seek to serve all our guests with the perfect dining experience.
+            We provide perfect ambbience to cherish special moments.
+          </p>
+        </div>
+        <!-- info end -->
+        <!-- info start -->
+        <div class="grid place-items-center w-72 h-auto mt-20">
+          <img class="w-24" src="./images/hospitality.png" alt="hospitality" />
+          <h2 class="text-[22px] font-semibold pt-4">Hospitality</h2>
+          <p class="text-[17px] text-center pt-4">
+            Our staff members are happy to help. We go the extra mile to make
+            you happy.
+          </p>
+        </div>
+        <!-- info end -->
+      </div>
+    </section>
+    <!-- why_us end -->
+    <!-- gallery start -->
+    <section id="gallery" class="grid place-items-center p-10 pb-20">
+      <div class="grid place-items-center justify-center pt-20">
+        <h1 class="text-[32px] font-semibold font-serif">Gallery</h1>
+        <div class="py-[2px] w-[80px] bg-[#F3961C] rounded-full"></div>
+      </div>
+      <div
+        class="mt-24 sm:grid sm:grid-cols-2 justify-around sm:gap-8 lg:grid-cols-3 z-[10px] lg:p-4"
+      >
+        <!-- start_pics -->
+        <span>
+          <img
+            class="w-[375px] rounded-lg mt-8 hover:scale-105 transition-all duration-500"
+            src="./images/gallery_1.jpg"
+            alt="gallery_1"
+          />
+        </span>
+        <!-- end_pics -->
+        <!-- start_pics -->
+        <span>
+          <img
+            class="w-[375px] rounded-lg mt-8 hover:scale-105 transition-all duration-500"
+            src="./images/gallery_2.jpg"
+            alt="gallery_2"
+          />
+        </span>
+        <!-- end_pics -->
+        <!-- start_pics -->
+        <span>
+          <img
+            class="w-[375px] rounded-lg mt-8 hover:scale-105 transition-all duration-500"
+            src="./images/gallery_3.jpg"
+            alt="gallery_3"
+          />
+        </span>
+        <!-- end_pics -->
+        <!-- start_pics -->
+        <span>
+          <img
+            class="w-[375px] rounded-lg mt-8 hover:scale-105 transition-all duration-500"
+            src="./images/gallery_4.jpg"
+            alt="gallery_4"
+          />
+        </span>
+        <!-- end_pics -->
+        <!-- start_pics -->
+        <span>
+          <img
+            class="w-[375px] rounded-lg mt-8 hover:scale-105 transition-all duration-500"
+            src="./images/gallery_5.jpg"
+            alt="gallery_5"
+          />
+        </span>
+        <!-- end_pics -->
+        <!-- start_pics -->
+        <span>
+          <img
+            class="w-[375px] rounded-lg mt-8 hover:scale-105 transition-all duration-500"
+            src="./images/gallery_6.jpg"
+            alt="gallery_6"
+          />
+        </span>
+        <!-- end_pics -->
+      </div>
+    </section>
+    <!-- gallery end -->
+    <!-- contact start -->
+    <section class="bg-[#F2F2F2] grid pb-20">
+      <div id="contact" class="grid place-items-center justify-center pt-20">
+        <h1 class="text-[32px] font-semibold font-serif">Contact Us</h1>
+        <div class="py-[2px] w-[80px] bg-[#F3961C] rounded-full"></div>
+      </div>
+      <div class="mt-32 lg:flex lg:flex-row-reverse lg:justify-between">
+        <!-- start -->
+        <div class="grid place-content-center lg:pr-8">
+          <div class="flex items-center gap-4">
+            <span><i class="bx bx-crosshair text-3xl font-bold"></i></span>
+            <div>
+              <h3 class="font-bold text-[18px]">Our Location</h3>
+              <p>Berndorf, Germany</p>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- start -->
+          <div class="flex items-center gap-4 pt-8 lg:pt-14">
+            <span><i class="bx bxs-envelope text-3xl"></i></span>
+            <div>
+              <h3 class="font-bold text-[18px]">General Enquiries</h3>
+              <a
+                class="text-blue-600 text-lg"
+                href="http://www.codingnepalweb.com/cdn-cgi/l/email-protection"
+                >[email protected]</a
+              >
+            </div>
+          </div>
+          <!-- end -->
+          <!-- start -->
+          <div class="flex items-center gap-4 pt-8 lg:pt-14">
+            <span><i class="bx bxs-phone-call text-3xl"></i></span>
+            <div>
+              <h3 class="font-bold text-[18px]">Call Us</h3>
+              <p>+01 92728239</p>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- start -->
+          <div class="flex items-center gap-4 pt-8 lg:pt-14">
+            <span><i class="bx bxs-time text-3xl"></i></span>
+            <div>
+              <h3 class="font-bold text-[18px]">Our Location</h3>
+              <p>Mon-Sun : 10:00 AM - 7:00 PM</p>
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+        <!-- contact end -->
+        <form class="p-6 grid mt-4 lg:w-[800px]">
+          <!-- bio start -->
+          <div class="flex flex-col gap-4">
+            <label class="text-lg font-semibold" for="Full-Name"
+              >Full Name</label
+            >
+            <input placeholder="Your Name" type="text" class="rounded-xl p-3" />
+          </div>
+          <!-- bio end -->
+          <!-- bio start -->
+          <div class="flex flex-col gap-4 pt-8">
+            <label class="text-lg font-semibold" for="Your email"
+              >Your Email</label
+            >
+            <input
+              placeholder="Your Email"
+              type="text"
+              class="rounded-xl p-3"
+            />
+          </div>
+          <!-- bio end -->
+          <!-- bio start -->
+          <div class="flex flex-col gap-4 pt-8">
+            <label class="text-lg font-semibold" for="Your number"
+              >Your Number</label
+            >
+            <input
+              placeholder="Your Contact Number"
+              type="text"
+              class="rounded-xl p-3"
+            />
+          </div>
+          <!-- bio end -->
+          <!-- bio start -->
+          <div class="flex flex-col gap-4 mt-4 pt-8">
+            <label class="text-lg font-semibold" for="text_area"
+              >Textarea</label
+            >
+            <textarea
+              placeholder="Your Message"
+              class="rounded-xl p-3"
+              id="input_textarea"
+            ></textarea>
+          </div>
+          <!-- bio end -->
+          <button
+            class="bg-[#3b141c] px-8 p-2 text-xl text-white font-bold rounded-3xl mt-8 w-36"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer id="footer" class="bg-[#1B1B1B] text-white p-4">
+      <div
+        class="pb-20 lg:flex lg:justify-between lg:items-end lg:p-16 lg:pt-1 pt-20"
+      >
+        <figure class="flex items-center gap-4">
+          <img
+            class="w-14 cursor-pointer"
+            src="./images/coffee_logo.png"
+            alt="coffee_logo"
+          />
+          <p class="text-2xl font-bold">Coffee</p>
+        </figure>
+        <div>
+          <ul class="pt-5">
+            <li class="text-xl font-bold">Useful Links</li>
+            <li class="pt-4 w-10 cursor-pointer hover:underline text-lg">
+              About
+            </li>
+            <li class="pt-4 w-10 cursor-pointer hover:underline text-lg">
+              Services
+            </li>
+            <li class="pt-4 w-20 cursor-pointer hover:underline text-lg">
+              Why Us
+            </li>
+            <li class="pt-4 w-10 cursor-pointer hover:underline text-lg">
+              Gallery
+            </li>
+            <li class="pt-4 w-10 cursor-pointer hover:underline text-lg">
+              Contact
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-8">
+          <h2 class="text-2xl font-semibold">Contact</h2>
+          <!-- start details -->
+          <span class="flex gap-4 items-center pt-4">
+            <i class="fa-solid fa-location-crosshairs text-xl"></i>
+            <p class="text-lg">Berndorf, Germany</p>
+          </span>
+          <!-- end details -->
+          <!-- start details -->
+          <span class="flex gap-4 items-center pt-4">
+            <i class="fa-solid fa-phone-volume text-xl"></i>
+            <p class="text-lg">+01 92728239</p>
+          </span>
+          <!-- end details -->
+          <span class="flex gap-4 items-center pt-4">
+            <i class="fa-solid fa-clock text-xl"></i>
+            <p class="text-lg">Mon-Sun :10:00 AM - 7:00 PM</p>
+          </span>
+          <!-- end details -->
+        </div>
+
+        <div class="pt-8">
+          <h2 class="text-2xl font-bold">Follow</h2>
+          <span class="pt-4 flex gap-8">
+            <i
+              class="fa-brands fa-facebook text-xl hover:animate-pulse transition-all duration-500 cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-twitter text-xl hover:animate-pulse transition-all duration-500 cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-instagram text-xl hover:animate-pulse transition-all duration-500 cursor-pointer"
+            ></i>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
